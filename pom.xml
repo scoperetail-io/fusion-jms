@@ -30,6 +30,11 @@
 		<spotless.version>2.10.0</spotless.version>
 	</properties>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:scoperetail-io/al-gif-jms-lib.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
