@@ -10,20 +10,10 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "port.retry")
 public class Config {
   private List<String> queues = new ArrayList<>();
-  private List<String> classes = new ArrayList<>();
-  private List<String> methods = new ArrayList<>();
   private List<String> bean = new ArrayList<>();
 
   public List<String> getQueues() {
     return this.queues;
-  }
-
-  public List<String> getClasses() {
-    return this.classes;
-  }
-
-  public List<String> getMethods() {
-    return this.methods;
   }
 
   public List<String> getBean() {
