@@ -1,5 +1,5 @@
 /* ScopeRetail (C)2021 */
-package com.scoperetail.al.gif.jms.lib.properties;
+package com.scoperetail.fusion.jms.properties;
 
 import java.util.ArrayList;
 import java.util.List;

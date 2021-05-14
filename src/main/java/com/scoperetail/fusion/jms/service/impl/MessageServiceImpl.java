@@ -1,10 +1,11 @@
 /* ScopeRetail (C)2021 */
-package com.scoperetail.al.gif.jms.lib.service.impl;
+package com.scoperetail.fusion.jms.service.impl;
 
-import com.scoperetail.al.gif.jms.lib.service.MessageService;
+import com.scoperetail.fusion.jms.service.MessageService;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

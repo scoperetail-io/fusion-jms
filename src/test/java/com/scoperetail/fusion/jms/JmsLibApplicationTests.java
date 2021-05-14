@@ -1,7 +1,7 @@
 /* ScopeRetail (C)2021 */
-package com.scoperetail.al.gif.jms.lib;
+package com.scoperetail.fusion.jms;
 
-import com.scoperetail.al.gif.jms.lib.service.MessageService;
+import com.scoperetail.fusion.jms.service.MessageService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

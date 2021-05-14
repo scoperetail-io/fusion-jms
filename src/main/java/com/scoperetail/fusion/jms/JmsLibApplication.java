@@ -1,5 +1,5 @@
 /* ScopeRetail (C)2021 */
-package com.scoperetail.al.gif.jms.lib;
+package com.scoperetail.fusion.jms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

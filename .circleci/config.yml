@@ -28,9 +28,9 @@ jobs:
       - run: 
           name: Review commits comments
           command: |
-                if [[ "$CIRCLE_BRANCH" != "main" ]]
+                if [[ "$CIRCLE_BRANCH" != "master" ]]
                 then
-                    text=`git log $CIRCLE_BRANCH --not origin/main --pretty=oneline --no-merges`
+                    text=`git log $CIRCLE_BRANCH --not origin/master --pretty=oneline --no-merges`
                     while read -r line; do
                         output=`echo $line|grep -i "al-[0-9]\|[skip ci]"`
                         if [[ $output ]]
@@ -54,14 +54,14 @@ jobs:
       - run:        
           name: Test and Sonar Scan
           command: | 
-                if [[ -z "$RELEASE" && "${CIRCLE_BRANCH}" != "main" ]]; then
+                if [[ -z "$RELEASE" && "${CIRCLE_BRANCH}" != "master" ]]; then
                   mvn clean package sonar:sonar -s .circleci/.circleci.settings.xml
                 fi
       # Deploy!
       - run:
           name: Deploy SNAPSHOT
           command:  |
-                if [[ -z "$RELEASE" && "${CIRCLE_BRANCH}" != "main" ]]; then
+                if [[ -z "$RELEASE" && "${CIRCLE_BRANCH}" != "master" ]]; then
                   mvn -s .circleci/.circleci.settings.xml -DskipTests deploy
                 fi
                   
@@ -69,7 +69,7 @@ jobs:
       - run:
           name: Perform Maven Release
           command:  |
-                if [[ "$CIRCLE_BRANCH" = "main" ]]
+                if [[ "$CIRCLE_BRANCH" = "master" ]]
                 then
                         git config --global user.email "tushar.agrawal@scoperetail.com"
                         git config --global user.name "scoperetail2"
