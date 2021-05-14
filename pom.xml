@@ -8,11 +8,11 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.scoperetail.al.gif</groupId>
-	<artifactId>al-gif-jms-lib</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<groupId>com.scoperetail.fusion</groupId>
+	<artifactId>fusion-jms</artifactId>
+	<version>0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>al-gif-jms-lib</name>
+	<name>fusion-jms</name>
 	<description>Send and read messages from a queue</description>
 
 	<properties>
@@ -30,7 +30,7 @@
 	</properties>
 
 	<scm>
-		<developerConnection>scm:git:git@github.com:scoperetail-io/al-gif-jms-lib.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:scoperetail-io/fusion-jms.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 

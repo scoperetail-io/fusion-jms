@@ -1,7 +1,7 @@
 /* ScopeRetail (C)2021 */
-package com.scoperetail.al.gif.jms.lib.service;
+package com.scoperetail.fusion.jms.service;
 
-import com.scoperetail.al.gif.jms.lib.properties.Config;
+import com.scoperetail.fusion.jms.properties.Config;
 import javax.jms.JMSException;
 import javax.jms.TextMessage;
 import org.slf4j.Logger;
