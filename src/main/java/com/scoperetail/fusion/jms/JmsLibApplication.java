@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.scoperetail.al.gif.jms.lib"})
+@ComponentScan(basePackages = {"com.scoperetail.fusion.jms"})
 public class JmsLibApplication {
 
   public static void main(String[] args) {
