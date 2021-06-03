@@ -10,7 +10,7 @@
 
 	<groupId>com.scoperetail.fusion</groupId>
 	<artifactId>fusion-jms</artifactId>
-	<version>0.4-SNAPSHOT</version>
+	<version>0.4</version>
 	<packaging>jar</packaging>
 	<name>fusion-jms</name>
 	<description>Send and read messages from a queue</description>
@@ -32,7 +32,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:scoperetail-io/fusion-jms.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>fusion-jms-0.4</tag>
 	</scm>
 
 	<dependencies>
